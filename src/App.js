@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./App.css";
 
 export default function App() {
     const [advice, setAdvice] = useState("");
@@ -19,28 +20,27 @@ export default function App() {
     return ( <
         >
         <
-        div >
-        <
-        h1 > Here is your Advice < /h1> <
-        p > { advice } < /p>
-
-        <
-        button onClick = { getAdvice } > Get Advice < /button> <
+        div className = "container" > { " " } <
+        span className = "heading" > Here is your Advice < /span>{" "} <
+        p className = "paraAdvice" > { `" ${advice} " ` } < /p>{" "} <
+        button className = "buttonAdvice"
+        onClick = { getAdvice } > { " " }
+        Get Advice { " " } <
+        /button>{" "} <
         Message count = { count }
-        /> <
-        /div> <
+        />{" "} < /
+        div > { " " } <
         />
-    )
+    );
 }
-
 
 function Message(props) {
     return ( <
         >
         <
         p >
-        You have read < strong > { props.count } < /strong> Pices of Advice <
-        /p> <
+        You have read < strong > { props.count } < /strong> Pices of Advice{" "} < /
+        p > { " " } <
         />
-    )
+    );
 }

@@ -2,3 +2,39 @@
     padding: 0;
     margin: 0;
 }
+
+.container {
+    padding: 10px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 47.22vmax;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-shadow: 1px 1px 10px white;
+    margin: 10px;
+}
+
+.paraAdvice {
+    margin: 40px 0;
+}
+
+.buttonAdvice {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 5px black;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.buttonAdvice:hover {
+    box-shadow: 1px 1px 10px black;
+}
